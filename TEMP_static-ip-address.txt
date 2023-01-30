@@ -1,5 +1,5 @@
 network:
- render: networkd
+ renderer: networkd
  ethernets:
   ens33:
    dhcp4: no
@@ -7,7 +7,7 @@ network:
     - IP-address/Sub-Netmask
    routes:
     - to: default
-    via: IP-default-Gateway
+      via: IP-default-Gateway
    nameservers:
     addresses: [dns1, dns2]
  version: 2
